@@ -1,0 +1,229 @@
+.about_us_wrapper {
+    background-color: #233138;
+    height: 275px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+.about_us_wrapper__title {
+    margin-left: 32px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 47.21px;
+    font-weight: 700;
+}
+
+.about_us_wrapper__text {
+    /* margin-left: 385px; */
+    margin-top: 20px;
+    /* margin-left: 23%; */
+    padding: 30px;
+    width: calc(100% + var(--blockWidth));
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    background-color: #7AB2AB80;
+    border-top-left-radius: 20px;
+}
+
+.about_us_text {
+    display: flex;
+    margin-bottom: 120px;
+}
+
+.about_us_text__img {
+    width: 650px;
+    height: 572px;
+    left: 50%;
+    top: 19%;
+    /* z-index: 99999999; */
+    position: absolute;
+    /* flex-basis: 50%; */
+}
+
+.about_us_text__img img{
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.about_us_text__description {
+    padding: 24px 16px 0 0;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about_us_text__description___item {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.about_us_text2 {
+    margin-top: 50px;
+    display: flex;
+    gap: 24px;
+}
+
+.about_us_text2__description {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about_us_text2__img {
+    flex-basis: 50%;
+}
+
+.about_us_text2__img img {
+    border-radius: 20px;
+}
+
+.about_us_text2__description {
+    flex-basis: 50%;
+}
+
+
+
+
+.main_activity__title {
+    margin-top: 70px;
+    font-size: 40px;
+    line-height: 47.21px;
+    font-weight: 700;
+    text-align: center;
+    color: #3D837B;
+}
+.main_activity {
+    padding-inline:60px;
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.main_activity__part {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_activity__item {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    border: 1px solid #3D837B;
+    border-radius: 15px;
+    gap: 24px;
+}
+
+.main_activity__item___num {
+    font-size: 40px;
+    line-height: 47.21px;
+    font-weight: 700;
+    color: #3D837B;
+}
+
+.main_activity__item___text {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 25.35px;
+}
+
+.main_activity__item___text.indent {
+    margin-left: 16px;
+}
+
+.main_activity__imgs {
+    margin-top: 24px;
+}
+
+.main_activity__imgs___item {
+    margin-left: 40px;
+    margin-bottom: -60px;
+}
+
+
+
+
+.structure_of_institution {
+    margin-top: 70px;
+    background-color: #233138;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.structure_of_institution__container {
+    width: var(--blockWidth);
+    color: white;
+}
+
+.structure_of_institution__container___title {
+    margin-top: 70px;
+    font-size: 40px;
+    line-height: 47.21px;
+    font-weight: 700;
+}
+
+.structure_of_institution__container___content {
+    margin: 50px 0 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #7AB2AB;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.structure_of_institution__container___content____item {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.structure_of_institution__container___content____item iframe {
+    height: 323px;
+}
+
+.structure_of_institution__container___content____item.text {
+    padding-inline: 32px;
+}
+
+.structure_of_institution__container___content____item.text.background_c {
+    background-color: #7AB2AB80;
+    color: white;
+    border-top-left-radius: 20px;
+}
+
+.structure_of_institution__container___content____item.img {
+    height: 323px;
+    align-items: center;
+}
+
+.structure_of_institution__container___content____item.img2 img{
+    height: 323px;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-right-radius: 20px;
+}
+
+.structure_of_institution__container___content____item_____title {
+    font-size: 24px;
+    line-height: 28.32px;
+    font-weight: 500;
+}
+
+.structure_of_institution__container___content____item_____text {
+    font-size: 18px;
+    line-height: 23.6px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru" style="margin-top:0px">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="breadcrumbs_text newsDetail_articles_wrapper__item___title"></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/news.css">
+    <link rel="stylesheet" href="styles/adaptiv.css">
+</head>
+
+<body>
+
+    <my-header></my-header>
+
+    <main>
+        <div class="main_container">
+            <div class="breadcrumbs">
+                <a class="breadcrumbs_link" href="index.html">Главная /</a> <a class="breadcrumbs_link"
+                    href="news.html">Новости /</a>
+                <span class="breadcrumbs_text newsDetail_articles_wrapper__item___title"></span>
+            </div>
+            <div class="newsDetail_articles_wrapper__item___news_page">
+                <p class="newsDetail_articles_wrapper__item___title"></p>
+                <p class="newsDetail_articles_wrapper__item___date"></p>
+                <div class="newsDetail_img"><img src="" alt=""></div>
+
+                <p class="newsDetail_articles_wrapper__item___text"></p>
+
+                <div id="myModal" class="modal newsImg">
+                    <span class="close newsImg">&times;</span>
+                    <img class="modal-content newsImg" id="img01">
+                    <div id="caption" class="captionNewsImg"></div>
+                </div>
+
+
+                <div class="newsDetail_articles_wrapper__item___imgs">
+
+                </div>
+
+                <div class="video_blog_wrapper__itemN">
+                    <iframe class="vidsrc" id="myIframe" src="" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="video_blog_wrapper__item___text">
+                        <p class="video_blog_wrapper__item___text____date"></p>
+                        <p class="video_blog_wrapper__item___text____description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <my-footer></my-footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/customs/headerFooter.js"></script>
+    <script type="module" src="edit.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Функция для загрузки данных новости
+            const loadNewsDetails = (id) => {
+                fetch(`http://localhost:3000/get_messages?id=${id}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.length > 0) {
+                            let message = data[0]; // Предполагается, что данные возвращаются в виде массива с одним элементом
+
+                            $(".newsDetail_articles_wrapper__item___title").text(message.title || '');
+                            $(".newsDetail_articles_wrapper__item___date").html(message.date || '');
+                            $(".newsDetail_articles_wrapper__item___text").html(message.text || message.caption || '');
+
+                            if (message.photo && message.photo.url) {
+                                $(".newsDetail_img img").attr("src", `http://localhost:3000${message.photo.url}`);
+                            }
+
+                            // Обработка дополнительных изображений
+                            if (message.additionalImages && message.additionalImages.length > 0) {
+                                let additionalImagesHTML = message.additionalImages.map(imgUrl => `<img src="${imgUrl}" class="additional-img" alt="">`).join("");
+                                $(".newsDetail_articles_wrapper__item___imgs").html(additionalImagesHTML).show();
+                            } else {
+                                $(".newsDetail_articles_wrapper__item___imgs").hide(); // Скрываем блок с дополнительными изображениями, если их нет
+                            }
+
+                            // Обработчик клика по дополнительным изображениям
+                            $(".additional-img").on("click", function () {
+                                let modal = $("#myModal");
+                                let modalImg = $("#img01");
+                                let captionText = $("#caption");
+
+                                modal.css("display", "flex"); // Используем flexbox для центрирования
+                                modalImg.attr("src", this.src);
+                                captionText.text(this.alt);
+                            });
+
+                            // Обработчик для закрытия модального окна
+                            $(".close").on("click", function () {
+                                $("#myModal").css("display", "none");
+                            });
+
+                            // Обработчик для закрытия модального окна при клике на фон
+                            $("#myModal").on("click", function (event) {
+                                if ($(event.target).is("#myModal")) {
+                                    $(this).css("display", "none");
+                                }
+                            });
+                        } else {
+                            console.error('Нет данных для новости с ID:', id);
+                        }
+                    })
+                    .catch(error => console.error('Ошибка при загрузке данных новости:', error));
+            };
+
+            // При загрузке страницы
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+            if (id) {
+                loadNewsDetails(id);
+            }
+
+            // Обработка изменений параметра id в URL (например, при переходе между новостями)
+            window.addEventListener('popstate', () => {
+                const newId = urlParams.get('id');
+                if (newId) {
+                    loadNewsDetails(newId);
+                }
+            });
+        });
+
+    </script> -->
+</body>
+
+</html>

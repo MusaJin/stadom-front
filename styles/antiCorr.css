@@ -1,0 +1,202 @@
+.docs_container {
+    margin-bottom: 50px;
+    background-color: #233138;
+    height: 210px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+.docs_container__title {
+    font-size: 40px;
+    line-height: 47.21px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 40px;
+    width: calc(100% + var(--blockWidth));
+    background-color: #7AB2AB80;
+    border-top-left-radius: 20px;
+
+}
+
+.toggle {
+    display: flex;
+    gap: 16px;
+}
+
+.toggle a {
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    line-height: 18.88px;
+}
+
+.toggle a:hover {
+    border-bottom: 5px solid #7AB2AB80;
+}
+
+.toggle_active {
+    border-bottom: 5px solid #7AB2AB80;
+}
+
+
+
+
+.feedback {
+    display: flex;
+    top: auto;
+    left: auto;
+    right: 7%;
+    position: absolute;
+    flex-direction: column;
+    width: 350px;
+    height: 744px;
+    gap: 12px;
+}
+
+@media (max-width: 1600px) {
+    .feedback {
+        display: flex;
+        top: auto;
+        left: auto;
+        right: 1%;
+        position: absolute;
+        flex-direction: column;
+        width: 350px;
+        height: 744px;
+        gap: 12px;
+    }
+
+}
+
+
+.feedback_title {
+    padding: 8px;
+    font-size: 24px;
+    line-height: 29.05px;
+    font-weight: 700;
+    color: white;
+    background-color: #7AB2AB;
+}
+
+.feedback_item {
+    padding: 8px;
+    font-size: 16px;
+    line-height: 19.78px;
+    font-weight: 600;
+    border: 1px solid #7AB2AB;
+}
+
+.antiCorr {
+    margin-bottom: 50px;
+    width: 850px;
+}
+
+.docs {
+    margin-bottom: 50px;
+    width: var(--blockWidth);
+}
+
+.rla,
+.rules {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lri,
+.mm,
+.formdoc,
+.reporting,
+.anti_corr,
+.anti_corr2,
+.rules,
+.regulation,
+.coll_agreement,
+.regulation_position,
+.evidence,
+.licenses,
+.fin_ec_plans,
+.state_assignment,
+.regulation_authorities,
+.consideration_of_complaints,
+.indep_assessment,
+.questionnaire_of_satisfaction,
+.accessibility_passport,
+.implementation_of_442,
+.board_of_trustees,
+.prevention_of_abuse {
+    display: flex;
+    flex-direction: column;
+}
+
+.anti_corr2,
+.prevention_of_abuse {
+    margin-bottom: 200px;
+}
+
+.rla_title,
+.lri_title,
+.mm_title,
+.formdoc_title,
+.reporting_title,
+.anti_corr_title,
+.anti_corr2_title {
+    font-size: 24px;
+    line-height: 29.05px;
+    font-weight: 700;
+    /* margin-left: 385px; */
+    /* margin-top: 20px; */
+    /* margin-left: 23%; */
+    padding: 20px;
+    width: 100%;
+    background-color: #7AB2AB;
+    color: white;
+}
+
+.rla_item {
+    padding: 24px;
+    display: flex;
+    background-color: #49817A1A;
+    align-items: center;
+    gap: 24px;
+    /* justify-content: space-between; */
+}
+
+.rla_item__img {
+    /* flex-basis: 4.2%; */
+    width: 39px;
+    height: 48px;
+}
+
+.rla_item__img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.rla_item__text {
+    flex-basis: 93%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 20px;
+    line-height: 24.2px;
+}
+
+.rla_item__format {
+    color: #696969;
+}
+
+.rla_item:nth-child(odd) {
+    background-color: #ffffff;
+    /* Цвет фона для нечетных элементов */
+}
+
+.rla_item:nth-child(even) {
+    background-color: #49817A1A;
+    /* Цвет фона для четных элементов */
+}

@@ -1,0 +1,127 @@
+.footer {
+    /* margin-top: 70px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eaeaea;
+}
+
+.footer_container {
+    margin-top: 50px;
+    width: var(--blockWidth);
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+.footer_container img {
+    width: fit-content;
+    height: fit-content;
+}
+
+.footer_container__item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 20%;
+    gap: 16px;
+}
+
+.footer_container__item___title {
+    font-size: 20px;
+    line-height: 23.6px;
+    font-weight: 500;
+}
+
+.footer_container__item___text {
+    font-size: 14px;
+    line-height: 21px ;
+}
+
+.footer_container__2 {
+    width: var(--blockWidth);
+    height: 158px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer_container__2 img {
+    width: fit-content;
+    height: fit-content;
+}
+
+.private {
+    display: flex;
+    gap: 40px;
+}
+
+.private a {
+    color: #808080;
+}
+
+.footer_container__2___item {
+    display: flex;
+    gap: 55px;
+}
+
+
+@media (max-width: 1201px) {
+    .footer {
+        margin-top: 30px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #eaeaea;
+        gap: 30px;
+    }
+    .footer_container img {
+        width: 100px;
+        height: 50px;
+        object-fit: contain;
+    }
+    .footer_container__item.adaptiv {
+        display: none;
+    }
+
+    .footer_container__item {
+        flex-basis: 85%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer_container {
+        margin-top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+    }
+    
+
+    .footer_container__2 {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer_container__item___text {
+        font-size: 13px;
+        line-height: 18px ;
+    }
+
+    .private {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    
+}

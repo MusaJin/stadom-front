@@ -1,0 +1,314 @@
+.provisionOfServices_container {
+    background-color: #233138;
+    min-height: 357px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+.provisionOfServices_container__title {
+    margin-left: 32px;
+    width: 100%;
+    font-size: 40px;
+    line-height: 47.21px;
+    font-weight: 700;
+}
+
+.provisionOfServices_container__text {
+    /* margin-left: 385px; */
+    margin-top: 20px;
+    /* margin-left: 23%; */
+    padding: 30px;
+    width: calc(100% + var(--blockWidth));
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    background-color: #7AB2AB80;
+    border-top-left-radius: 20px;
+}
+
+.provisionOfServices_container__img {
+    position: absolute;
+    top: 15%;
+    left: 55%;
+    width: 650px;
+    height: 420px;
+}
+
+.provisionOfServices_container__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+
+.orgs_banner {
+    margin-top: 180px;
+}
+
+
+
+.available_seats__title {
+    margin-top: 50px;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.available_seats {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+
+.available_seats__item {
+    width: 444px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3D837B;
+    border-radius: 20px;
+    gap: 24px;
+}
+
+.available_seats__item___title {
+    font-size: 20px;
+    line-height: 24.32px;
+    font-weight: 500;
+}
+
+.available_seats__item___text {
+    font-size: 16px;
+    line-height: 18.88px;
+}
+
+.available_seats__item___card {
+    display: flex;
+    gap: 24px;
+}
+
+.available_seats__item___card____item {
+    width: 160px;
+    height: 116px;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3D837B;
+    border-radius: 20px;
+    gap: 8px;
+
+}
+
+.available_seats__item___card____item_____num {
+    font-size: 64px;
+    line-height: 75.53px;
+    font-weight: 500;
+    color: #3D837B;
+}
+
+.available_seats__text {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: center;
+}
+
+
+
+
+.types_of_services__title {
+    margin-top: 70px;
+    width: var(--blockWidth);
+    font-size: 38px;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.types_of_services {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.types_of_services__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.types_of_services__item___text {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+
+
+
+.resources_title {
+    margin-top: 70px;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.resources_list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.resources_list__item {
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 12px;
+}
+
+.resources_list__item___title {
+    display: flex;
+    align-items: end;
+}
+
+.resources_list__item___title hr {
+    height: 1px;
+    width: auto;
+    margin: 0;
+    border: none;
+    flex-grow: 1;
+    background-color: #36C9B7;
+}
+
+.resources_list__item___title____text {
+    font-size: 24px;
+    line-height: 28.32px;
+}
+
+.resources_list__item___title____num {
+    font-size: 24px;
+    line-height: 29.05px;
+    font-weight: 700;
+    color: #36C9B7;
+}
+
+.resources_list__item___subtitle {
+    width: 90%;
+    font-size: 16px;
+    line-height: 18.88px;
+}
+
+.resources_banner {
+    margin-top: 70px;
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+}
+
+
+
+
+.rights_obligations {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rights,
+.obligations {
+    flex-basis: 48%;
+}
+
+.rights_obligations__title {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.rights_obligations__container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.rights_obligations_container___item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rights_obligations_container___item__text {
+    font-size: 19px;
+    line-height: 26px;
+}
+
+
+
+
+.daily_schedule__title {
+    margin-top: 79px;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.daily_schedule__container {
+    margin: 50px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.daily_schedule__container___item {
+    display: flex;
+}
+
+.table_time,
+.table_name {
+    font-size: 20px;
+    line-height: 26px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.daily_schedule__container___item {
+    border: 1px solid #B9B9B9;
+    border-bottom: 0.5px;
+    background-color: white;
+}
+
+.daily_schedule__container___item:last-child {
+    border-bottom: 1px solid #B9B9B9;
+}
+
+.daily_schedule__container___item____time {
+    border-right: 0.5px;
+    flex-basis: 12%;
+    font-size: 19px;
+    line-height: 24.7px;
+    font-weight: 600;
+    border-right: 1px solid #B9B9B9;
+    padding: 8px;
+}
+
+.daily_schedule__container___item____name {
+    flex-basis: 88%;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 8px;
+}
